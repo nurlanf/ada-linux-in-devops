@@ -19,6 +19,5 @@ def home():
         """, MY_ENV=os.environ.get('MY_ENV', 'dev'), 
            last_text=last_text)
 
-
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
