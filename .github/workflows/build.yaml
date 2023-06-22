@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Docker Compose and Test
         run: |
-          docker-compose -f devops/docker/docker-compose.yaml up -d
+          docker-compose -f devops/docker/docker-compose.yaml up -d --build
           sleep 10  # wait for the app to start
           response=$(curl http://localhost:8080/api?text=sometext)
           echo "Response: $response"
