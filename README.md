@@ -70,7 +70,7 @@ cd ada-linux-in-devops/
 # Build docker image locally
 docker build -t listen-display -f devops/docker/Dockerfile .
 
-# List docker images
+# Lists docker images
 docker image ls
 
 # Run docker container from built image
