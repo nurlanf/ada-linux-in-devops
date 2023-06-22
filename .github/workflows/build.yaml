@@ -33,6 +33,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
+          file: devops/docker/Dockerfile
           push: false
           load: true
           tags: ${{ env.IMAGE_NAME }}:${{ env.TAG }}
@@ -51,7 +52,6 @@ jobs:
           fi
 
       - name: Push Docker image
-        if: github.event_name == 'push' && github.ref == 'refs/heads/mytargetbranch'
         uses: docker/build-push-action@v2
         with:
           context: .
