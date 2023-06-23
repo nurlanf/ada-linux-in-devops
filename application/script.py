@@ -15,7 +15,7 @@ def get_text():
 @app.route('/')
 def home():
     return render_template_string("""
-        <h1>This is {{MY_ENV}} ENvironment and last posted text is: {{last_text}}</h1>
+        <h1>This is {{MY_ENV}} ENVIRONMENT and last posted text is: {{last_text}}</h1>
         """, MY_ENV=os.environ.get('MY_ENV', 'dev'), 
            last_text=last_text)
 
