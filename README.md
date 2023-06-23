@@ -58,3 +58,10 @@ http://<VM_IP_ADDRESS>:8080/api?text=HELLO_ADA_UNIVERSITY
 Refresh the page in browser to see the result!
 
 > To update environment name, pass <MY_ENV> environment variable to change default which is "dev"
+
+### Local development with docker
+1. Building docker and running with docker-compose
+```bash
+cd devops/docker
+docker-compose up -d 
+```
